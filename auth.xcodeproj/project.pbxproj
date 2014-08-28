@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18670F1019A4D32B00B42A29 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18670F0F19A4D32B00B42A29 /* AuthViewController.m */; };
+		18670F1919A4F52900B42A29 /* APIFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 18670F1819A4F52900B42A29 /* APIFetcher.m */; };
+		18670F3319A5264900B42A29 /* LandingPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18670F3219A5264900B42A29 /* LandingPageVC.m */; };
+		18670F3919A52C1600B42A29 /* LMSContentTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18670F3819A52C1600B42A29 /* LMSContentTVC.m */; };
 		18D7859619A3DA310097A7CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7859519A3DA310097A7CD /* Foundation.framework */; };
 		18D7859819A3DA310097A7CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7859719A3DA310097A7CD /* CoreGraphics.framework */; };
 		18D7859A19A3DA310097A7CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7859919A3DA310097A7CD /* UIKit.framework */; };
@@ -14,7 +18,6 @@
 		18D785A219A3DA310097A7CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D785A119A3DA310097A7CD /* main.m */; };
 		18D785A619A3DA310097A7CD /* lmsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D785A519A3DA310097A7CD /* lmsAppDelegate.m */; };
 		18D785A919A3DA310097A7CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D785A719A3DA310097A7CD /* Main.storyboard */; };
-		18D785AC19A3DA310097A7CD /* lmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D785AB19A3DA310097A7CD /* lmsViewController.m */; };
 		18D785AE19A3DA310097A7CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D785AD19A3DA310097A7CD /* Images.xcassets */; };
 		18D785B519A3DA310097A7CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D785B419A3DA310097A7CD /* XCTest.framework */; };
 		18D785B619A3DA310097A7CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D7859519A3DA310097A7CD /* Foundation.framework */; };
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18670F0E19A4D32B00B42A29 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		18670F0F19A4D32B00B42A29 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		18670F1719A4F52900B42A29 /* APIFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIFetcher.h; path = APIFetcher/APIFetcher.h; sourceTree = "<group>"; };
+		18670F1819A4F52900B42A29 /* APIFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIFetcher.m; path = APIFetcher/APIFetcher.m; sourceTree = "<group>"; };
+		18670F3119A5264900B42A29 /* LandingPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageVC.h; sourceTree = "<group>"; };
+		18670F3219A5264900B42A29 /* LandingPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageVC.m; sourceTree = "<group>"; };
+		18670F3719A52C1600B42A29 /* LMSContentTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSContentTVC.h; sourceTree = "<group>"; };
+		18670F3819A52C1600B42A29 /* LMSContentTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSContentTVC.m; sourceTree = "<group>"; };
 		18D7859219A3DA310097A7CD /* auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = auth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D7859519A3DA310097A7CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18D7859719A3DA310097A7CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +56,6 @@
 		18D785A419A3DA310097A7CD /* lmsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lmsAppDelegate.h; sourceTree = "<group>"; };
 		18D785A519A3DA310097A7CD /* lmsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lmsAppDelegate.m; sourceTree = "<group>"; };
 		18D785A819A3DA310097A7CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18D785AA19A3DA310097A7CD /* lmsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lmsViewController.h; sourceTree = "<group>"; };
-		18D785AB19A3DA310097A7CD /* lmsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lmsViewController.m; sourceTree = "<group>"; };
 		18D785AD19A3DA310097A7CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18D785B319A3DA310097A7CD /* authTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = authTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D785B419A3DA310097A7CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -79,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18670F1B19A4F54000B42A29 /* APIFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				18670F1719A4F52900B42A29 /* APIFetcher.h */,
+				18670F1819A4F52900B42A29 /* APIFetcher.m */,
+			);
+			name = APIFetcher;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		18D7858919A3DA310097A7CD = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +131,14 @@
 		18D7859B19A3DA310097A7CD /* auth */ = {
 			isa = PBXGroup;
 			children = (
-				18D785A419A3DA310097A7CD /* lmsAppDelegate.h */,
-				18D785A519A3DA310097A7CD /* lmsAppDelegate.m */,
+				18670F3719A52C1600B42A29 /* LMSContentTVC.h */,
+				18670F3819A52C1600B42A29 /* LMSContentTVC.m */,
+				18670F3119A5264900B42A29 /* LandingPageVC.h */,
+				18670F3219A5264900B42A29 /* LandingPageVC.m */,
 				18D785A719A3DA310097A7CD /* Main.storyboard */,
-				18D785AA19A3DA310097A7CD /* lmsViewController.h */,
-				18D785AB19A3DA310097A7CD /* lmsViewController.m */,
+				18670F0E19A4D32B00B42A29 /* AuthViewController.h */,
+				18670F0F19A4D32B00B42A29 /* AuthViewController.m */,
+				18670F1B19A4F54000B42A29 /* APIFetcher */,
 				18D785AD19A3DA310097A7CD /* Images.xcassets */,
 				18D7859C19A3DA310097A7CD /* Supporting Files */,
 			);
@@ -126,6 +148,8 @@
 		18D7859C19A3DA310097A7CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18D785A419A3DA310097A7CD /* lmsAppDelegate.h */,
+				18D785A519A3DA310097A7CD /* lmsAppDelegate.m */,
 				18D7859D19A3DA310097A7CD /* auth-Info.plist */,
 				18D7859E19A3DA310097A7CD /* InfoPlist.strings */,
 				18D785A119A3DA310097A7CD /* main.m */,
@@ -250,9 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18670F3919A52C1600B42A29 /* LMSContentTVC.m in Sources */,
 				18D785A219A3DA310097A7CD /* main.m in Sources */,
+				18670F1019A4D32B00B42A29 /* AuthViewController.m in Sources */,
+				18670F1919A4F52900B42A29 /* APIFetcher.m in Sources */,
+				18670F3319A5264900B42A29 /* LandingPageVC.m in Sources */,
 				18D785A619A3DA310097A7CD /* lmsAppDelegate.m in Sources */,
-				18D785AC19A3DA310097A7CD /* lmsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +484,7 @@
 				18D785C619A3DA310097A7CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18D785C719A3DA310097A7CD /* Build configuration list for PBXNativeTarget "authTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +493,7 @@
 				18D785C919A3DA310097A7CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
