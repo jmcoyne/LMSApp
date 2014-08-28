@@ -7,12 +7,19 @@
 //
 
 #import "LMSContentTVC.h"
+#import "APIFetcher.h"
 
 @interface LMSContentTVC ()
 
 @end
 
 @implementation LMSContentTVC
+
+- (void)setListItems:(NSArray *)listItems {
+    _listItems = listItems;
+    [self.tableView reloadData];
+}
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,12 +33,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     [self fetchListItems];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+- (void)fetchListItems{
+    //Get the list of items (courses or users) using the API
+     NSURL * url = [NSURL URLWithString:@"https://test.lifeplot.com/api/v1/courses"];
+    // create a (non-main) queue to do fetch on
+    dispatch_queue_t fetchQ = dispatch_queue_create("lms fetcher", NULL);
+    // put a block to do the fetch onto that queue
+    dispatch_async(fetchQ, ^{
+        // fetch the JSON data from Flickr
+        
+        NSData *jsonResults = [NSData dataWithContentsOfURL:url];
+        NSDictionary *itemListResults = [NSJSONSerialization JSONObjectWithData:jsonResults options:0 error:NULL];
+        NSLog(@"ItemList Results = %@", itemListResults);
+        NSArray *listItems = [itemListResults valueForKeyPath:@"name"];
+        // update the Model (and thus our UI), but do so back on the main queue
+        dispatch_async(dispatch_get_main_queue(), ^{
+           // [self.refreshControl endRefreshing]; // stop the spinner
+            self.listItems = listItems;
+        });
+    });
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +82,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 2;
 }
 
 /*

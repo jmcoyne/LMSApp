@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface LandingPageVC : UIViewController
+@property (nonatomic, strong) NSString *collectionName;
+@property (strong, nonatomic) NSString *userEmail;
+@property (strong, nonatomic) NSString *userAuthToken;
 
 @end

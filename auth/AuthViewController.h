@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface AuthViewController : UIViewController
+@property (nonatomic, strong) NSString *userEmail; // from login CURRENTLY HARDCODED (WITH PASSWORD)
+@property (nonatomic, strong) NSString *userAuthToken; // from login
+@property (nonatomic) BOOL userDidAuthenticate; // if true, succesful Login
+
 
 @end

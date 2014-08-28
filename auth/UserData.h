@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface UserData : NSObject
+@property (nonatomic, strong) NSString *userEmail;
+@property (nonatomic) BOOL userDidAuthenticate;
+@property (nonatomic, strong) NSString *userAuthToken;
 
 @end

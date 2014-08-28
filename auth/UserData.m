@@ -9,5 +9,10 @@
 #import "UserData.h"
 
 @implementation UserData
+- (void)setValueForKey:(UserData *)user;
+
+
+
+
 
 @end

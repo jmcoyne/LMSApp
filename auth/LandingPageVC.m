@@ -7,6 +7,7 @@
 //
 
 #import "LandingPageVC.h"
+#import "LMSContentTVC.h"
 
 @interface LandingPageVC ()
 
@@ -14,18 +15,11 @@
 
 @implementation LandingPageVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //Should check is logged in
     // Do any additional setup after loading the view.
 }
 
@@ -35,7 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -43,7 +37,18 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.destinationViewController isKindOfClass:[LMSContentTVC class]]) {
+        
+            LMSContentTVC *lcvc = (LMSContentTVC *)segue.destinationViewController;
+            lcvc.userEmail = self.userEmail;
+            lcvc.userAuthToken = self.userAuthToken;
+            lcvc.contentAPIPath = segue.identifier;
+            lcvc.title = segue.identifier;
+        
+        
+    }
+
 }
-*/
+
 
 @end

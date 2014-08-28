@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface LMSContentTVC : UITableViewController
-
+@property (strong, nonatomic) NSString *userEmail;
+@property (strong, nonatomic) NSString *userAuthToken;
+@property (strong, nonatomic) NSString *contentAPIPath;
+@property (nonatomic, strong) NSArray *listItems; // of courses or users
 @end
